@@ -347,7 +347,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 268060649}
   m_OnClick:
     m_PersistentCalls:
@@ -1854,7 +1854,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1838930650}
   m_OnClick:
     m_PersistentCalls:
@@ -1955,5 +1955,4 @@ MonoBehaviour:
   _cellPrefab: {fileID: 5107489682829675015, guid: 81d4634b30749ee458abb197ae7f0a59,
     type: 3}
   _fieldSize: 10
-  _field: {fileID: 1949862453}
   _distanceBetweenCells: 1

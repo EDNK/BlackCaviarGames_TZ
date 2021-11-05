@@ -14,7 +14,6 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _exitButton;
 
-
     [SerializeField] private string _winText = "Поздравляю, Вы выиграли!";
     [SerializeField] private string _loseText = "К сожалению, Вы проиграли.";
 
@@ -24,6 +23,7 @@ public class GameOverUI : MonoBehaviour
     {
         _group = GetComponent<CanvasGroup>();
         _group.alpha = 0;
+        SetActiveButtons(false);   
     }
 
     private void OnEnable()
@@ -43,8 +43,8 @@ public class GameOverUI : MonoBehaviour
     private void EndOfGameHandler(bool success)
     {
         _group.alpha = 1;
-        _restartButton.interactable = true;
-        _exitButton.interactable = true;
+
+        SetActiveButtons(true);
 
         if (success)
             _endText.SetText(_winText);
@@ -60,6 +60,12 @@ public class GameOverUI : MonoBehaviour
     private void OnExit()
     {
         Application.Quit();
+    }
+
+    private void SetActiveButtons(bool flag)
+    {
+        _restartButton.gameObject.SetActive(flag);
+        _exitButton.gameObject.SetActive(flag);
     }
 }
 

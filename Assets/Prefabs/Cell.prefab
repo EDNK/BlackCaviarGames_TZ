@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxDeep: 3
-  _chanceToDrop: 20
+  _chanceToDrop: 52.1
   _ingot: {fileID: 3188455088867217920}
   HasIngot: 0
 --- !u!61 &3706737802351923512
