@@ -5,6 +5,8 @@ using UnityEngine;
 public class FieldCreator : MonoBehaviour
 {
     [SerializeField] private Cell _cellPrefab;
+    
+    [Range(1,10)]
     [SerializeField] private int _fieldSize;
     
     [Range(1,1.5f)]
